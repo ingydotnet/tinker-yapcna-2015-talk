@@ -1,0 +1,190 @@
+---- config
+title: Tinker
+indent: 5
+auto_size: 1
+vim_opts: '-u NONE'
+skip: 0
+
+---- center
+Tinker
+
+Ingy döt Net
+
+YAPC North America
+Salt Lake City, UT
+June 8, 2015
+
+----
+== Introducing Tinker
+
+* Tinker — A New CPAN Module
+
++* but first…
+
+----
+== Introducing jsFiddle
+
+* http://jsfiddle.net
+  * http://jsfiddle.net/5f8FL/
+  * http://jsfiddle.net/sebleedelisle/KBrnn/
+
+* jsFiddle has 4 panes
+  * 3 Input, 4 Output
+* Enter HTML, CSS, JavaScript
+* Get a browser rendering
+
+* Save/Share results
+* Shows up all over stackoverflow.com
+
+* Simple / Interactive / Collaborative / Awesome
+
+----
+== jsFiddle Clones
+
+* jsFiddle has lots of clone sites
+  * Cool things are always extended
+* Not just HTML rendering either
+  * 3D Rendering
+* http://coffeescript.org
+
+* How about a general purpose clone?
+  * Any Inputs, Any Outputs, Any Functions, Any Layout
+
+----
+== Introducing Tinker
+
+* Make a config file
+  * Inputs
+  * Outputs
+  * Relationships
+  * Theme, Plugins, etc
+* Create an Interactive Web Site
+
+* Awesome!
+
+----
+== Introducing Tinker
+
+* Per Project
+  * YAML, Swim, JSONY, etc
+* Demo your Project to the World
+  * Always Interactive
+  * Canned Demos too
+* Get Your Tests for Free
+  * Users can save inputs
+  * Can go directly into test suite
+* Interactive TDD
+  * Run on localhost and make tests
+
+----
+== Tinker is an Old Idea
+
+* October 2008
+  * Predates jsFiddle
+* TinkerTiles
+* TinkerText
+* TinkerTest(.com)
+* Web and Curses
+* Berlin QAH 2015
+
+----
+== !!! Status Warning !!!
+
+* Tinker is available on CPAN!!!
++  * Just barely :(
+
++* Tinker::App::YAMLTesting
+  * Working subclass example
+
++* Lots of work left to do:
+  * Plugins
+  * Themes
+  * Testing
+
++* Hopefully this talk inspires you to Tinker!!
+  * We can hack on it this week
+  * Conference Driven Development
+
+----
+== Show Me The Tinker!!!
+
+* http://yaml.tinkertest.com
+  * YAML Testing Tinker Site
+
+* ~ Comment Bug
+* Save test cases
+
+----
+== Using Tinker
+
+> cpanm Tinker::App::YAMLTesting
+
+> mkdir .tinker; cd .tinker
+> tinker init --app=Tinker::App::YAMLTesting
+# git clone git@github.com:ingydotnet/yaml-tinker
+
+# Edit tinker.yaml
+> tinker update
+> tinker make
+> tinker start
+
+----
+== How Tinker Works
+
+* Cog — Web Framework CPAN Module
+* Tinker — Subclasses Cog
+* Tinker::App::YAMLTesting — Subclasses Tinker
+* tinker.yaml — Acts as Subclass of App
+  * Can make Tinker sites without actual subclass
+
+> tinker clean; tinker update
+  * Pull together all configured files
+> tinker make; tinker start
+  * Build files into a webapp and start it
+
+Let's try it out now.
+
+----
+== Introducing Cog
+
+* JavaScript Based WebApps
+* Static standalone
+  * gh-pages Hosting
+* Perl Server Option
+  * POST handling
+
+* 2011 — Strategic Data
+* Extremely Snappy WebApps
+* jQuery, Jemplate
+* See ./webapp/
+
+----
+== Cog / Tinker Plugins
+
+* So many cool web things to mash-in
+* Layouts and Themes
+  * Same site can be shown many ways
+  * Can let user choose layout
+* Multi-User Collaboration
+* Ace Editor — Full-featured web editor for input
+* Syntax Highlighting
+* GitHub OAUTH
+* Remote Storage
+* Docker — Sandbox Server Actions
+
+----
+== Upcoming Tinker Sites
+
+* YAML Tinkering in All Languages
+* Pegex Tinkering
+  * Create DSLs in Many Languages
+  * Perl and JavaScript
+* Swim Tinkering
+* CafeScript Tinkering
+* Tinker::App::Tinker
+  * Tinker App to make Tinker Apps!
+
+----
+== The End
+
+== Questions?
